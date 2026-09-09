@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Week 3 — Modeling How Literacy Develops</title>
+  <meta name="description" content="Doctoral seminar dashboard for the Modeling How Literacy Develops session." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Password gate: see script.js for how this works and its limits -->
+  <div id="gate">
+    <div class="gate-card">
+      <div class="gate-lock">🔒</div>
+      <h1>Week 3 Dashboard</h1>
+      <p>This page is for the doctoral seminar cohort. Enter the password shared in the course folder.</p>
+      <input id="gate-input" type="password" placeholder="Password" autocomplete="off" />
+      <button id="gate-submit">Unlock</button>
+      <div id="gate-error"></div>
+    </div>
+  </div>
+
+  <!-- Main content -->
+  <div id="content">
+    <header class="hero">
+      <div class="wrap">
+        <span class="eyebrow">Week 3 · September 14, 2026</span>
+        <h1>Modeling How Literacy Develops</h1>
+        <p class="subtitle">
+          How do we know what we know about how literacy develops? This week looks at three methodological lenses
+          researchers use to answer that question: growth curve modeling, item response theory, and
+          connectionist/agent-based models.
+        </p>
+        <div class="meta-row">
+          <span class="meta-pill">Facilitator: Ashley Ippolito</span>
+          <span class="meta-pill">Format: Asynchronous</span>
+          <span class="meta-pill">Est. time: 45–60 min</span>
+        </div>
+      </div>
+    </header>
+
+    <nav class="jumpnav">
+      <div class="wrap">
+        <a href="#objectives">Objectives</a>
+        <a href="#todo">What To Do</a>
+        <a href="#video">Video</a>
+        <a href="#materials">Materials</a>
+        <a href="#deepdives">Deep Dives</a>
+        <a href="#discussion">Discussion</a>
+        <a href="#activity">Activity</a>
+      </div>
+    </nav>
+
+    <main class="wrap">
+      <section id="objectives">
+        <div class="section-head">
+          <div class="section-num" style="background: var(--tan)">1</div>
+          <h2>Learning Objectives</h2>
+        </div>
+        <div class="card">
+          <p style="margin-top: 0; color: var(--text-dim)">By the end of this week, you should be able to:</p>
+          <ul class="objectives">
+            <li>
+              Describe how growth curve modeling, item response theory, and connectionist/agent-based models are
+              each used to study literacy development.
+            </li>
+            <li>Compare the assumptions each method makes about how literacy skills emerge.</li>
+            <li>Identify which of these methodological lenses might apply to your own research question.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="todo">
+        <div class="section-head">
+          <div class="section-num" style="background: var(--rust)">2</div>
+          <h2>What To Do This Week</h2>
+        </div>
+        <div class="card">
+          <ol class="steps">
+            <li>Watch the video overview below — a synthesized walkthrough of all three methods.</li>
+            <li>
+              Skim the two companion readings if you want to go deeper on growth curve modeling or item response
+              theory (optional but recommended).
+            </li>
+            <li>Complete the <em>Choosing the Right Lens</em> activity (about 10–15 minutes).</li>
+            <li>Post at least two comments in the course folder, including one reply to a classmate, by the end of the week.</li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="video">
+        <div class="section-head">
+          <div class="section-num" style="background: var(--maroon); color: #f6ece3">3</div>
+          <h2>Video Overview</h2>
+        </div>
+        <div class="video-frame">
+          <video controls preload="metadata">
+            <source src="assets/models-of-early-reading.mp4" type="video/mp4" />
+            Your browser doesn't support embedded video —
+            <a href="assets/models-of-early-reading.mp4">download the video</a> instead.
+          </video>
+        </div>
+        <p class="video-caption">A NotebookLM-generated synthesis of this week's three modeling approaches.</p>
+      </section>
+
+      <section id="materials">
+        <div class="section-head">
+          <div class="section-num" style="background: var(--slate); color: #f6ece3">4</div>
+          <h2>Materials</h2>
+        </div>
+        <div class="materials-grid">
+          <div class="material-card">
+            <div class="material-icon">📄</div>
+            <div>
+              <span class="tag">Growth Curve Modeling</span>
+              <h3>
+                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6445730/" target="_blank" rel="noopener">
+                  A Longitudinal Analysis of the Trajectories and Predictors of Word Reading and Reading
+                  Comprehension Development among At-Risk Readers
+                </a>
+              </h3>
+              <p>
+                Applies growth curve modeling directly to at-risk readers, making the method immediately relevant
+                to special education and SLP research.
+              </p>
+            </div>
+          </div>
+          <div class="material-card">
+            <div class="material-icon">📄</div>
+            <div>
+              <span class="tag">Item Response Theory</span>
+              <h3>
+                <a
+                  href="https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2023.1103853/full"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Construction of a Reading Literacy Test Item Bank for Fourth Graders Based on Item Response Theory
+                </a>
+              </h3>
+              <p>
+                Shows IRT used to build and validate a literacy assessment tool — a task many peers will face in
+                their own research or practice.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="deepdives">
+        <div class="section-head">
+          <div class="section-num" style="background: var(--teal); color: #191113">5</div>
+          <h2>Optional Deep Dives</h2>
+        </div>
+        <p style="margin-top: 0; color: var(--text-dim)">
+          Four short videos going further into specific methods from this week, for anyone who wants more depth
+          before the discussion. Fully optional.
+        </p>
+        <div class="materials-grid">
+          <div class="material-card">
+            <div class="material-icon">🎬</div>
+            <div>
+              <span class="tag">Coming Soon</span>
+              <h3>Seasonal Perturbations in Longitudinal Growth: Piecewise Modeling of Summer Reading Loss</h3>
+              <p>
+                How to methodologically capture non-linear, discontinuous academic growth over time: piecewise
+                latent growth curve modeling, differential seasonal effects across learner profiles, and model fit
+                selection (RMSEA, SRMR, log-likelihood) for comparing linear, quadratic, and piecewise growth models.
+              </p>
+            </div>
+          </div>
+          <div class="material-card deepdive-card">
+            <div class="material-icon">🎬</div>
+            <div>
+              <span class="tag tag-ready">Watch</span>
+              <h3>Psychometrics of Early Literacy: IRT Item Banking &amp; NAEP Scale Linkage</h3>
+              <p>
+                The psychometric architecture behind measuring reading ability across grade levels: 1PL, 2PL, and
+                3PL logistic models (difficulty, discrimination, pseudo-guessing), conditional 2D-IRT linkage of
+                ECLS-K trajectory classes to the NAEP Grade 4 scale, and construct validity/item misfit in
+                large-scale item banks.
+              </p>
+              <div class="deepdive-video">
+                <video controls preload="metadata">
+                  <source src="assets/anatomy-of-an-assessment.mp4" type="video/mp4" />
+                  Your browser doesn't support embedded video —
+                  <a href="assets/anatomy-of-an-assessment.mp4">download the video</a> instead.
+                </video>
+              </div>
+            </div>
+          </div>
+          <div class="material-card">
+            <div class="material-icon">🎬</div>
+            <div>
+              <span class="tag">Coming Soon</span>
+              <h3>Computational Architectures of Word Recognition: DRC vs. Connectionist PDP Models</h3>
+              <p>
+                Theoretical models of word-level reading and what they imply for cognitive psychology and
+                instruction: the rule-based Dual-Route Cascaded (DRC) model, Seidenberg's Parallel Distributed
+                Processing "triangle" model linking orthography, phonology, and semantics, and how statistical
+                learning and working memory shape decoding practice.
+              </p>
+            </div>
+          </div>
+          <div class="material-card deepdive-card">
+            <div class="material-icon">🎬</div>
+            <div>
+              <span class="tag tag-ready">Watch</span>
+              <h3>Executive Function as a Developmental Covariate in Early Reading</h3>
+              <p>
+                The structural relationships between working memory, cognitive flexibility, and reading
+                trajectories: direct assessment measures (Numbers Reversed, Dimensional Change Card Sort),
+                teacher-reported behavioral constructs, and executive function as predictor, co-occurring trait, or
+                mediator of early literacy difficulty.
+              </p>
+              <div class="deepdive-video">
+                <video controls preload="metadata">
+                  <source src="assets/hidden-reading-suspects.mp4" type="video/mp4" />
+                  Your browser doesn't support embedded video —
+                  <a href="assets/hidden-reading-suspects.mp4">download the video</a> instead.
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="discussion">
+        <div class="section-head">
+          <div class="section-num" style="background: var(--tan)">6</div>
+          <h2>Discussion Prompts</h2>
+        </div>
+        <p style="color: var(--text-dim); margin-top: 0">
+          Reply to any or all of these as a comment in the course folder:
+        </p>
+        <div class="prompt-list">
+          <div class="prompt-card">
+            <b>1.</b> Pick one of the three modeling approaches and describe how you might apply it, or a method it
+            inspires, to a question in your own research. What would it let you see that your current approach
+            can't?
+          </div>
+          <div class="prompt-card">
+            <b>2.</b> Each method assumes something different about how literacy develops: a smooth trajectory, a
+            latent trait, or an emergent computational process. Which assumption fits your own theoretical lens
+            best, and where might it clash with what you've seen in practice?
+          </div>
+          <div class="prompt-card">
+            <b>3.</b> These methods are often treated as more "objective" than qualitative approaches. Push back on
+            or defend that idea: what does a model like this actually decide for us, and what's still left to human
+            judgment?
+          </div>
+        </div>
+      </section>
+
+      <section id="activity">
+        <div class="section-head">
+          <div class="section-num" style="background: var(--rust)">7</div>
+          <h2>Activity: Choosing the Right Lens</h2>
+        </div>
+        <p style="color: var(--text-dim); margin-top: 0">
+          For each scenario below, identify which modeling approach — growth curve modeling, item response theory,
+          or connectionist/agent-based modeling — is the best fit, and write 2–3 sentences justifying your choice.
+        </p>
+        <div class="scenario-grid">
+          <div class="scenario-card">
+            <span class="tag">Scenario A</span>
+            <p>
+              A district wants to track individual students' oral reading fluency growth across a school year to
+              identify which intervention groups show the steepest gains.
+            </p>
+          </div>
+          <div class="scenario-card">
+            <span class="tag">Scenario B</span>
+            <p>
+              A team is developing a new phonological awareness screening tool and needs to determine which items
+              best distinguish between students who do and don't have reading difficulties.
+            </p>
+          </div>
+          <div class="scenario-card">
+            <span class="tag">Scenario C</span>
+            <p>A researcher wants to understand why children with dyslexia show a specific error pattern when reading irregular words.</p>
+          </div>
+        </div>
+        <div class="submit-box">
+          <b>Submit:</b> Post your three answers as a comment in the course folder by the end of the week. Ashley
+          will reply to each with a follow-up question or connection to the readings.
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      Questions? Reach out to Ashley Ippolito —
+      <a href="mailto:ippolito.official@gmail.com">ippolito.official@gmail.com</a>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
