@@ -4,8 +4,9 @@ A single-page dashboard for the Week 3 session ("Modeling How Literacy Develops"
 doctoral seminar, deployed as a static site on [Vercel](https://vercel.com).
 
 The page covers the session's learning objectives, what to do, the video overview,
-companion readings, optional deep-dive videos, discussion prompts, and the week's
-activity ("Choosing the Right Lens").
+companion readings, optional deep-dive videos, and the week's activity ("Choosing
+the Right Lens"), which ends in an embedded Google Form so classmates can submit
+their answers directly from the page.
 
 ## Structure
 
@@ -42,6 +43,9 @@ sensitive.
   filename, or update the `<source>` path in `index.html`).
 - **Deep-dive videos**: once links are ready, swap the "Coming Soon" tags in the
   "Optional Deep Dives" section for links to the videos.
+- **Activity form**: the "Choosing the Right Lens" submission form is a Google Form
+  embedded via an `<iframe>` in the `#activity` section — edit the form itself in
+  Google Forms (responses collect there), or swap the `src` for a different form.
 - **Password**: change the `PASSWORD` constant at the top of `script.js`.
 - **Colors**: all five theme colors are defined as CSS custom properties at the top
   of `styles.css` (`--tan`, `--rust`, `--maroon`, `--slate`, `--teal`).
