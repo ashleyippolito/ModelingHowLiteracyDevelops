@@ -397,6 +397,14 @@ ol.steps li::before {
 .materials-grid {
   display: grid;
   gap: 16px;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: start;
+}
+
+@media (max-width: 640px) {
+  .materials-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .material-card {
