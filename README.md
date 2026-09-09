@@ -41,8 +41,12 @@ sensitive.
 
 - **Video overview**: replace `assets/models-of-early-reading.mp4` (keep the same
   filename, or update the `<source>` path in `index.html`).
-- **Deep-dive videos**: once links are ready, swap the "Coming Soon" tags in the
-  "Optional Deep Dives" section for links to the videos.
+- **Deep-dive videos**: three of the four "Optional Deep Dives" cards already have
+  embedded videos (`assets/anatomy-of-an-assessment.mp4`, `decoding-the-brain.mp4`,
+  `hidden-reading-suspects.mp4`); the "Seasonal Perturbations" card is a permanent
+  written overview with no video planned. To add one later, follow the pattern of
+  the other three cards (`deepdive-card` class + `deepdive-video` embed) and swap
+  its "Overview Only" tag for "Watch".
 - **Activity form**: the "Choosing the Right Lens" submission form is a Google Form
   embedded via an `<iframe>` in the `#activity` section — edit the form itself in
   Google Forms (responses collect there), or swap the `src` for a different form.
